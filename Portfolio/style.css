@@ -1,0 +1,175 @@
+body{
+  margin: 0;
+  color: #343434;
+}
+img{
+  width: 300px;
+}
+a{
+  color: #FFE66D; /*applies this color to all the links*/
+}
+a:hover{
+  text-decoration: none; /*underline removes on the links
+  when pointer hovers over the links*/
+}
+
+
+h2{
+  margin:0;
+}
+h1, h2{
+  font-family:'Caveat', cursive;
+  font-weight: 400;
+  margin:0;
+}
+.content-wrap{
+  max-width: 800px; /*max width the webpage uses depending on viewport of the device*/
+  width:85%; /*this makes the webpage use 85% of the width so when we make the
+  screen crop the content doesn't touch the edge of the screen and have space on the edge*/
+  margin: 0 auto; /*make the cheader in center alignment*/
+  padding: 60px 0;
+}
+h3{
+  margin:0;
+}
+.item.details h3+p{
+  font-style: italic;
+}
+.item-details h3 ~p{
+  margin:0;
+}
+.divider>section{
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
+}
+.divider>section:last-of-type{
+  border-button:none;
+}
+
+
+
+
+/*profile
+-----------------*/
+header{
+  background: #2F3061;
+  color: #F7FFF7;
+  text-align: center;
+}
+
+
+/*projects
+------------------*/
+.projects{
+  background: #F7FFF7;
+}
+.projects a{
+color: #2f3061;
+}
+.projects btn {
+  color: #F7FFF7;
+  /*change the color of the links in the project section*/
+  background: ##2F3061;
+  text-decoration:none;
+  padding: 8px; /*gives the link look of a button*/
+border-radius: 4px;
+  /*give this button rounding corners to look like button that can be selected*/
+display: inline-block;
+}
+.projects .btn:hover{
+  background: rgba(47,48,97, 80%) /*add alpha to the rgb to add opacity(lack of
+    transparency) on
+  the hover*/
+}
+.project-item {
+  overflow:hidden;
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
+
+}
+.project-item img {
+  float: left;
+  margin-right: 20px;
+}
+.project-item h3{
+  margin-top:0;
+}
+
+
+/* work experience
+-------------------*/
+.work-experience{
+  background: #A1C6D7;
+}
+
+
+/* education
+--------------*/
+.education{
+  background-image: url(../images/joanna-kosinska-unsplash.jpg);
+  /*../moves out from css to css-portfolio then images goes
+  inside images then / goes inside images and url*/
+  background-size:cover; /*the whole picture covers the area even
+  when open in diffrent vewport device screen*/
+  background-position: top right;/*so the pencils always show with
+the content on top right of the conatiner*/
+ padding:100px;
+}
+.educator p{
+  width:60%; /*so the text don't span the width of container and come
+  on top of the pencil-background image*/
+}
+
+/* contact info
+-------------------*/
+footer{
+  background: #343434;
+  color: #F7FFF7;
+
+}
+.contact-list{
+  list-style-type:none;
+  padding:0;
+  display:flex;
+  justify-content:center;
+}
+.contact-list a{
+  padding:15px;
+  display:inline-block;
+}
+/*responsive*/
+@media screen and (min-width:750px){
+  header, footer{
+    text-align: center;
+  }
+  .project-item img{
+    float:left;
+    margin-right:20px;
+  }/*when viewport is 750 px and greater the the image appears on left
+  otherwise when you make the viewport smaller then the image will
+  appear on top of the text*/
+  .job-item{
+    display:grid;
+    grid-template-column: 1fr 2fr;
+    column-gap:20px;
+  }/* the work summary will appear in column otherwise under the job title*/
+.contact-list{
+  display:flex;
+  justify-content:center;
+}/*when 750 or greater the list appears in center and horizontal otherwise
+ smaller screens it appears vertical */
+}
+
+@media screen and (max-width:749){
+  h1{
+    font-size:75px;
+    line-height:0.9;
+    margin-bottom: 20px;
+  }
+  h2{
+    line-height:1;
+  }
+  .contact-list a{
+    padding:5px;
+  }
+}
