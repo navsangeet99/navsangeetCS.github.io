@@ -1,4 +1,4 @@
-$(document).ready(function(){
+jQuery(document).ready(function(){
   
   //GET location of our device with latitude and longitude by calling navigator
   navigator.geolocation.getCurrentPosition(success, error);
@@ -20,7 +20,7 @@ $(document).ready(function(){
   'https://fcc-weather-api.glitch.me/api/current? lat=53.70&lon=-1.24'*/
     
     
-    $.getJSON(URL, function(data){
+    jQuery.getJSON(URL, function(data){
      console.log(data); 
       updateDOM(data);
         
