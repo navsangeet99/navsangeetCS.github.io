@@ -106,7 +106,7 @@ display: inline-block;
 /* education
 --------------*/
 .education{
-  background-image: url("images/joanna-kosinska-unsplash.jpg");
+  background-image: url(images/joanna-kosinska-unsplash.jpg);
   /*../moves out from css to css-portfolio then images goes
   inside images then / goes inside images and url*/
   background-size:cover; /*the whole picture covers the area even
