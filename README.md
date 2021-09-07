@@ -21,4 +21,4 @@
 
 ### Freecodecamp
 * I have another repository for the free code camp solutions 
-* However the live links are linked in this repositories' index.html file and also on teh course dashboard
+* However the live links are linked in this repositories' index.html file and also on the course dashboard
