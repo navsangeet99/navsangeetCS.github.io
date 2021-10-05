@@ -1,5 +1,8 @@
 # navsangeetCS.github.io
 
+## This repository contains all the projects done during academic journey.
+* The portfolio is linked tehre as well.
+
 ### Dashboard
 * It has all the projects done in the class through Linkedin, and the free code camp.
 * The Final project is also linked on the webpage.
